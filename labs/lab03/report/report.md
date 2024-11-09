@@ -1,12 +1,16 @@
 ---
-## Front matter
-title: "Шаблон отчёта по лабораторной работе"
-subtitle: "Простейший вариант"
-author: "Дмитрий Сергеевич Кулябов"
+##Front matter
+title: "Laboratory work report template"
+subtitle: "discpipline: Computer Architecture"
+author: "ali Hosseinabadi"
+
+##Generic options
+long: ru-RU
+toc-title: "Content"
 
 ## Generic otions
 lang: ru-RU
-toc-title: "Содержание"
+toc-title: "Content"
 
 ## Bibliography
 bibliography: bib/cite.bib
@@ -54,12 +58,12 @@ biblatexoptions:
   - autolang=other*
   - citestyle=gost-numeric
 ## Pandoc-crossref LaTeX customization
-figureTitle: "Рис."
-tableTitle: "Таблица"
-listingTitle: "Листинг"
-lofTitle: "Список иллюстраций"
-lotTitle: "Список таблиц"
-lolTitle: "Листинги"
+figureTitle: "Pic."
+tableTitle: "Таble"
+listingTitle: "Listing"
+lofTitle: "Illustration list"
+lotTitle: "Table list"
+lolTitle: "Listing"
 ## Misc options
 indent: true
 header-includes:
@@ -68,54 +72,53 @@ header-includes:
   - \floatplacement{figure}{H} # keep figures where there are in the text
 ---
 
-# Цель работы
+# Purpose of work
 
-Здесь приводится формулировка цели лабораторной работы. Формулировки
-цели для каждой лабораторной работы приведены в методических
-указаниях.
+the goal of this lab is to learn how to format reports using lightweight markdown makeup language.
+ 
+# Task
 
-Цель данного шаблона --- максимально упростить подготовку отчётов по
-лабораторным работам.  Модифицируя данный шаблон, студенты смогут без
-труда подготовить отчёт по лабораторным работам, а также познакомиться
-с основными возможностями разметки Markdown.
+-installation of neceserry software
 
-# Задание
+-filling in the laboratory work report no-3 using the markdown markup language
 
-Здесь приводится описание задания в соответствии с рекомендациями
-методического пособия и выданным вариантом.
+-task for independent work
 
-# Теоретическое введение
+# Theoretical introduction
 
-Здесь описываются теоретические аспекты, связанные с выполнением работы.
+Markdown is a lightweight markup language designed to designate formatting in plain text, with maximum human readability, and suitable for machine conversion into languages for advanced publications (HTML, Rich Text and others).
 
-Например, в табл. [-@tbl:std-dir] приведено краткое описание стандартных каталогов Unix.
+# Laboratory work
 
-: Описание некоторых каталогов файловой системы GNU Linux {#tbl:std-dir}
+In the terminal, I go to the course directory and update the repository from the remote one to GitHub. (@fig:001)
 
-| Имя каталога | Описание каталога                                                                                                          |
-|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| `/`          | Корневая директория, содержащая всю файловую                                                                               |
-| `/bin `      | Основные системные утилиты, необходимые как в однопользовательском режиме, так и при обычной работе всем пользователям     |
-| `/etc`       | Общесистемные конфигурационные файлы и файлы конфигурации установленных программ                                           |
-| `/home`      | Содержит домашние директории пользователей, которые, в свою очередь, содержат персональные настройки и данные пользователя |
-| `/media`     | Точки монтирования для сменных носителей                                                                                   |
-| `/root`      | Домашняя директория пользователя  `root`                                                                                   |
-| `/tmp`       | Временные файлы                                                                                                            |
-| `/usr`       | Вторичная иерархия для данных пользователя                                                                                 |
+![Updating changes in the course directory](image/1.png){#fig:001 width=70%} 
 
-Более подробно про Unix см. в [@tanenbaum_book_modern-os_ru; @robbins_book_bash_en; @zarrelli_book_mastering-bash_en; @newham_book_learning-bash_en].
+I compile the template using the make command (fig:002), check the correct execution of the command using the ls command (@fig:003) 
 
-# Выполнение лабораторной работы
+![Compiling the template](image/2.png){#fig:002 width=70%} 
 
-Описываются проведённые действия, в качестве иллюстрации даётся ссылка на иллюстрацию (рис. [-@fig:001]).
+![Checking](image/3.png){#fig:003 width=70%} 
 
-![Название рисунка](image/placeimg_800_600_tech.jpg){#fig:001 width=70%}
+After checking the functionality of the template compiler, I delete the generated files using the make clean command (@fig:004) 
 
-# Выводы
+![Deleting generated templates](image/4.png){#fig:004 width=70%} 
 
-Здесь кратко описываются итоги проделанной работы.
+Using the editor, I run a report on the completed laboratory work (@fig:005)
 
-# Список литературы{.unnumbered}
+![Preparing the report](image/5.png){#fig:005 width=70%}
 
-::: {#refs}
-:::
+# Tasks for independent work
+
+Similarly to completing the report on the current lab, I complete the report in markdown for the second lab, for this I go to the directory of the 2nd lab and prepare the report using the mousepad text editor. (@fig:006)
+
+![Completing the report on the 2nd lab](image/6.png){#fig:006 width=70%}
+
+# Conclusions
+
+As a result of completing this lab, I mastered the procedures for preparing reports using the lightweight markup language Markdown.
+
+# References
+
+1. [Course on TUIS](https://esystem.rudn.ru/course/view.php?id=112)
+2. [Laboratory work No. 3](https://esystem.rudn.ru/pluginfile.php/2089083/mod_resource/content/0/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F%20%D1%80%D0 %B0%D0%B1%D0%BE%D1%82%D0%B0%20%E2%84%963.%20%D0%AF%D0%B7%D1%8B%D0%BA%20%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B8%20.pdf) 3 . [Example of lab work](https://github.com/evdvorkina/study_2022-2023_arh-pc/blob/master/labs/lab04/report/%D0%9B04_%D0%94%D0%B2%D0%BE%D1%80%D0%BA%D0%B8%D0%BD%D0%B0_%D0%BE%D1%82%D1%87%D0%B5%D1%82.md?plain=1)
